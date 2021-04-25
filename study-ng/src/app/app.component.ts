@@ -1,23 +1,18 @@
 import { Component } from '@angular/core';
 
-
+enum List {
+  'lifeCycle' = 'lifeCycle',
+  'dynamicComponent' = 'dynamicComponent'
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  currentType: string;
 
-  name = 'name1'
-
+ 
   constructor() {
-    setTimeout(() => {
-      this.name = this.name + 'a'
-    }, 2000)
   }
 
-  selectType(type: string) {
-    this.currentType = type;
-  }
 }

@@ -1,10 +1,5 @@
+<div class="nav-container">
+  <a [routerLink]="['/life-cycle']">lifeCycle</a>
+  <a [routerLink]="['/dynamic-component']">dynamicComponent</a>
+</div>
 <router-outlet></router-outlet>
-
-<h1>
-  <a (click)="selectType('lifeCycle')">life cycle</a>
-</h1>
-<span [ngSwitch]="currentType">
-  <ng-container *ngSwitchCase="'lifeCycle'">
-    <app-lifecycle [name]="name"></app-lifecycle>
-  </ng-container>
-</span>

@@ -1,11 +1,11 @@
 import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
-  selector: 'app-lifecycle',
-  templateUrl: './lifecycle.component.html',
-  styleUrls: ['./lifecycle.component.scss']
+  selector: 'app-lifecycle-item',
+  templateUrl: './lifecycle-item.component.html',
+  styleUrls: ['./lifecycle-item.component.scss']
 })
-export class LifecycleComponent implements OnInit, OnChanges,
+export class LifecycleItemComponent implements OnInit, OnChanges,
   DoCheck, AfterContentChecked,
   AfterContentInit, AfterViewChecked, AfterViewInit {
 
@@ -17,16 +17,15 @@ export class LifecycleComponent implements OnInit, OnChanges,
   _name: string;
   @Input()
   get name(): string {
-    this.logIt("input prop get");
+    this.logIt(`input prop get ${this._name}`);
     return this._name
   }
   set name(v: string) {
     this._name = v;
-    this.logIt("input prop set");
+    this.logIt(`input prop set ${v}`);
   }
 
   constructor() {
-    this.logList = [];
     this.logIt("constructor");
   }
 
