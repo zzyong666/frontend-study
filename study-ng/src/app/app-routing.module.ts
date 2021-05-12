@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'life-cycle',
     loadChildren: () => import('./lifecycle/lifecycle.module').then(m => m.LifecycleModule)
   },
+  {
+    path: 'directive',
+    loadChildren: () => import('./custom-directive/custom-directive.module').then(m => m.CustomDirectiveModule)
+  },
 ];
 
 @NgModule({
