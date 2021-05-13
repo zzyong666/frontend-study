@@ -7,6 +7,7 @@ import { AppHiddenDirective } from './directives/app-hidden/app-hidden.directive
 import { AppShowDirective } from './directives/app-show/app-show.directive';
 import { AppClickDirective } from './directives/app-click/app-click.directive';
 import { AppShareModule } from 'src/modules/app-share-module.module';
+import { AppDblClickDirective } from './directives/app-dbl-click/app-dbl-click.directive';
 
 
 
@@ -16,7 +17,8 @@ import { AppShareModule } from 'src/modules/app-share-module.module';
     ExampleComponent,
     HoverDirective,
     AppShowDirective,
-    AppClickDirective
+    AppClickDirective,
+    AppDblClickDirective
   ],
   imports: [
     CommonModule,

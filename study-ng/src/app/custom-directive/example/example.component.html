@@ -8,5 +8,6 @@
         <span (appClick)="clickEvent($event)">left button click me</span><span>点击了{{clickType}}</span>
         <span (appClick)="clickEvent($event)" [type]="2">right button click me</span><span>点击了{{clickType}}</span>
         <span (appClick)="clickEvent($event)" [type]="1">middle button click me</span><span>点击了{{clickType}}</span>
+        <span (appClick.dbl)="clickEvent($event)">double click me</span><span>点击了{{clickType}}</span>
     </div>
 </div>
