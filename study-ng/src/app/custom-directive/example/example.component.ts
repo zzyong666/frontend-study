@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleComponent implements OnInit {
 
-  show: boolean = false
+  show: boolean = false;
+
+  clickType = 0;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  clickEvent(e: MouseEvent) {
+    this.clickType = this.clickType === 2 ? 0 : (this.clickType + 1)
   }
 }

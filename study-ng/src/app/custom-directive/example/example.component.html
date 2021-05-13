@@ -1,3 +1,12 @@
-<span (appHover)="show = $event">hover me and show：</span>
-<span [appHidden]="!show"> 属性型指令 [appHidden]。。。</span>
-<span *appShow="show"> 结构型指令 *appShow。。。</span>
+<div fxLayout="column" fxLayoutGap="20px">
+    <div>
+        <span (appHover)="show = $event">hover me and show：</span>
+        <span [appHidden]="!show"> 属性型指令 [appHidden]。。。</span>
+        <span *appShow="show"> 结构型指令 *appShow。。。</span>
+    </div>
+    <div fxLayout="column">
+        <span (appClick)="clickEvent($event)">left button click me</span><span>点击了{{clickType}}</span>
+        <span (appClick)="clickEvent($event)" [type]="2">right button click me</span><span>点击了{{clickType}}</span>
+        <span (appClick)="clickEvent($event)" [type]="1">middle button click me</span><span>点击了{{clickType}}</span>
+    </div>
+</div>

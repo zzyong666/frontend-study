@@ -5,6 +5,8 @@ import { ExampleComponent } from './example/example.component';
 import { HoverDirective } from './directives/hover/hover.directive';
 import { AppHiddenDirective } from './directives/app-hidden/app-hidden.directive';
 import { AppShowDirective } from './directives/app-show/app-show.directive';
+import { AppClickDirective } from './directives/app-click/app-click.directive';
+import { AppShareModule } from 'src/modules/app-share-module.module';
 
 
 
@@ -13,11 +15,13 @@ import { AppShowDirective } from './directives/app-show/app-show.directive';
     AppHiddenDirective,
     ExampleComponent,
     HoverDirective,
-    AppShowDirective
+    AppShowDirective,
+    AppClickDirective
   ],
   imports: [
     CommonModule,
-    CustomDirectiveRoutingModule
+    CustomDirectiveRoutingModule,
+    AppShareModule
   ]
 })
 export class CustomDirectiveModule { }
