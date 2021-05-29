@@ -17,11 +17,6 @@ import { AdIndexComponent } from './ad-index/ad-index.component';
     AdTwoComponent,
     AdIndexComponent
   ],
-  entryComponents: [
-    AdOneComponent,
-    AdTwoComponent,
-    AdIndexComponent
-  ],
   imports: [
     CommonModule,
     DynamicComponentRoutingModule
