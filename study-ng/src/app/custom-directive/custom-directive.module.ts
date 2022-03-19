@@ -8,6 +8,7 @@ import { AppShowDirective } from './directives/app-show/app-show.directive';
 import { AppClickDirective } from './directives/app-click/app-click.directive';
 import { AppShareModule } from '../../modules/app-share-module.module';
 import { AppDblClickDirective } from './directives/app-dbl-click/app-dbl-click.directive';
+import { ContextMenuDirective } from './directives/context-menu/context-menu.directive';
 
 
 
@@ -18,7 +19,8 @@ import { AppDblClickDirective } from './directives/app-dbl-click/app-dbl-click.d
     HoverDirective,
     AppShowDirective,
     AppClickDirective,
-    AppDblClickDirective
+    AppDblClickDirective,
+    ContextMenuDirective
   ],
   imports: [
     CommonModule,
